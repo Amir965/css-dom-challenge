@@ -5,21 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
+    <script src="/script.js"></script>
     <title>DOM - CSS</title>
   </head>
   <body>
 <div class="top">
  <h2>Learn to code by watching others</h2> 
-<p>See how experienced developers solve problems in real-time.Watching scripted tutorials is great but understanding how developers think is invaluable.</p>
-<button><span>Try it free 7days</span> then</br> s20/mo.thereafter</p></button>
-</div>
+<p>See how experienced developers solve problems in real-time.Watching scripted tutorials is great but understanding how developers think is invaluable.</p></div>
+<button class="but"><span>Try it free 7days</span> then $20/mo.thereafter</p></button>
 <div class="form">
-<input type="text" placeholder="   First Name ">
-<input type="text" placeholder="   Last name ">
-<input type="text" placeholder="   Email Address ">
-<input type="text" placeholder="   Password ">
-<button>CLAIM YOUR FREE TRAIL</button>
-<P>By clicking the button,you are agreeing to</br> our <span>Term and Services</span></P>
+  <form action="">
+<input type="text" placeholder="   First Name " id="first_name" value="" autocomplete="off">
+<p id="message"></p>
+<input type="text" placeholder="   Last Name " id="last_name" autocomplete="off">
+<p id="message1"></p>
+<input type="email" placeholder="   Email Address " id="email" autocomplete="off">
+<p id="message2"></p>
+<input type="password" placeholder="   Password " id="password" autocomplete="off">
+<p id="message3"></p>
+<button onclick="return myFun()">CLAIM YOUR FREE TRAIL</button>
+</form>
+<p>By clicking the button,you are agreeing to</br> our <span>Term and Services</span></p>
 </div>
 
   </body>
